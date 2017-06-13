@@ -1,0 +1,20 @@
+{
+  "name": "zone-input-help",
+  "version": "1.0.0",
+  "description": "Node app to input records into section.io zones.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "engines" : { 
+    "node" : ">=6.9.4" 
+  },
+  "author": "CJ Brewer <cj@section.io>",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  }
+}
