@@ -17,11 +17,13 @@ const uriToPost = `https://${uriEncodedAuth}@aperture.section.io/api/v1/account/
  * recordType - string
  * ttl - number (default 300)
  **/
-const recordsToPost = [
+let recordsToPost = [
     { recordName: 'test.com', recordData: '1.1.1.1', recordType: 'A' },
     { recordName: 'www.test.com', recordData: 'test.abc.com', recordType: 'CNAME' },
     { recordName: 'www.test.com', recordData: 'someTypeofString', recordType: 'TXT' },
 ];
+
+recordsToPost = require('./records.json');
 
 const count = recordsToPost.length - 1;
 let counter = 0;
